@@ -13,7 +13,7 @@ def todo():
                 "my_field": {
                     "query": request.args.get("text"),
                     "analyzer": "trigrams",
-                    "minimum_should_match": "60%"
+                    "minimum_should_match": "2<75%"
                 }
             }
         }
